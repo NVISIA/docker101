@@ -9,4 +9,8 @@
 .history/
 
 # Built Visual Studio Code Extensions
+<<<<<<< HEAD
 *.vsix
+=======
+*.vsix
+>>>>>>> Update .gitignore
