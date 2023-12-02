@@ -57,14 +57,14 @@ curl http://localhost:8080/index.html
 4) Status
 5) Ports (click it)
 
-![Docker Desktop](.\docker-desktop1.png)
+![Docker Desktop](./docker-desktop1.png)
 
 #### Explore the Learning Center
 
 1) Walkthroughs
 2) Docker for beginners by language
 
-![Docker Desktop](.\DockerDesktopLearning.png)
+![Docker Desktop](./DockerDesktopLearning.png)
 
 #### Stop the container
 
