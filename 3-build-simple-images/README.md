@@ -8,7 +8,7 @@
 
 ## Create a docker image using the nginx base image
 
-### Find and official Docker base image for nginx
+### Group Activity: Find and official Docker base image for nginx
 
 Open Docker Hub in a Browser: [Docker Hub](https://hub.docker.com/)
 
@@ -23,12 +23,13 @@ Open Docker Hub in a Browser: [Docker Hub](https://hub.docker.com/)
 
 ### Create and test a simple image using a Dockerfile
 
-- Create a Dockerfile using nginx:mainline-alpine3.18-slim base image
-- build the image called mysite with a v1 tag
+- Create a Dockerfile that uses the base image: nginx:mainline-alpine3.18-slim 
+- use docker build to create an image called mysite with a v1 tag
 - run the container using your new image on local port 8088
-- View the default page
+  - need to find the container port
+- View the default page in your browser and from the command line
 
-### Add a website to the container
+### Use your container to host the website in the container
 
 - Update the Dockerfile
 - During the build, copy the cool-website-source folder into the nginx image's HTML folder (/usr/share/nginx/html)
@@ -37,4 +38,13 @@ Open Docker Hub in a Browser: [Docker Hub](https://hub.docker.com/)
 ### Update the Website
 
 - Go into the cool-website-source folder and update the banner message in the index file
-- Rebuild and test the container - you might have to reload the webpage 
+- Rebuild and test the container - you might have to reload the webpage
+
+## End of lab
+
+### While you are waiting make addition updates and customize to the website
+
+#### make changes, rebuild with a new version tag and run the container
+
+- What challenges do have>
+- What should we automate to improve the developer experience?

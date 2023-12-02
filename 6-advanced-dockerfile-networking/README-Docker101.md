@@ -1,61 +1,56 @@
 # Build and run test application
 
-This repository contains an example Go application, used in the
-[Build with Docker guide](https://docs.docker.com/build/guide).
+## 1.Dockerfile
 
-## Overview of Dockerfile examples
-
-### 1.Dockerfile
-
-#### Introduction
+### Introduction
 
 [Dockerfile](./chapters/1.Dockerfile)
 
-### 2.Dockerfile
+## 2.Dockerfile
 
-#### Layers
+### Layers
 
 [Dockerfile](./chapters/2.Dockerfile)
 
-### 3.Dockerfile
+## 3.Dockerfile
 
-#### Multi-stage
+### Multi-stage
 
 [Dockerfile](./chapters/3.Dockerfile)
 
-### 4.Dockerfile
+## 4.Dockerfile
 
-#### Mounts
+### Mounts
 
 [Dockerfile](./chapters/4.Dockerfile)
 
-### 5.Dockerfile
+## 5.Dockerfile
 
-#### Build arguments
+### Build arguments
 
 [Dockerfile](./chapters/5.Dockerfile)
 
-### 6.Dockerfile
+## 6.Dockerfile
 
-#### Export binaries
+### Export binaries
 
 [Dockerfile](./chapters/6.Dockerfile)
 
-### 7.Dockerfile
+## 7.Dockerfile
 
-#### Test
+### Test
 
 [Dockerfile](./chapters/7.Dockerfile)
 
-### 8.Dockerfile
+## 8.Dockerfile
 
-#### Multi-platform
+### Multi-platform
 
 [Dockerfile](./chapters/8.Dockerfile)
 
-### Bonus Exercises
+## Bonus Exercises
 
-#### Simple Single Container
+### Simple Single Container
 
 ```bash
 # build and run the app
