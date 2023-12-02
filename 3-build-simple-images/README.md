@@ -32,7 +32,9 @@ Open Docker Hub in a Browser: [Docker Hub](https://hub.docker.com/)
 ### Use your container to host the website in the container
 
 - Update the Dockerfile
-- During the build, copy the cool-website-source folder into the nginx image's HTML folder (/usr/share/nginx/html)
+- During this build: 
+  - Set the working directory to usr/share/nginx/html
+  - copy the cool-website-source folder into the nginx image's HTML folder (your working folder)
 - Rebuild and test the container - you might have to reload the webpage
 
 ### Update the Website
@@ -46,5 +48,5 @@ Open Docker Hub in a Browser: [Docker Hub](https://hub.docker.com/)
 
 #### make changes, rebuild with a new version tag and run the container
 
-- What challenges do have>
+- What challenges do have?
 - What should we automate to improve the developer experience?
