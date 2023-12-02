@@ -30,7 +30,7 @@
     ps -aux
     ```
 
-7) Now list and update the website's default html file
+7) From inside the container, list and update the website's default html file
 
     ```bash
     # List the contents of the default html file
@@ -44,6 +44,11 @@
     ```
 
 8) Test the modified container URL in your browser using port 8081 - should see the updates
+
+    ```bash
+    # Use your browser or curl to test the updated website
+    ```
+
 9) See what's changed in containers file system
 
    ```bash
@@ -51,7 +56,7 @@
    docker diff hacksite
    ```
 
-10) Export the modified container as a new image
+10) Save your changes as a new image (write out the RW layer)
 
     ```bash
     # Export the contents of hacksite to a new docker image 
@@ -63,3 +68,13 @@
     # Now run your new image with a new name and on a new port
     docker container run -d -p 8081:80 --name hacksite1.0 my-new-image:v1.0
     ```
+
+11) Test your new container
+
+    ```bash
+    # Use your browser or curl to test the updated website 
+    ```
+
+### Clean up
+
+#### Remove your containers 
