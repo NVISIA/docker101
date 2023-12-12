@@ -9,9 +9,9 @@ import (
 	"os"
 )
 
-// var baseURL string = "http://localhost"
+var baseURL string = "http://localhost"
 // var baseURL string = "http://172.17.0.4"
-var baseURL string = "http://gotest-server"
+// var baseURL string = "http://gotest-server"
 var port string = "3000"
 var requestUrl string = fmt.Sprintf("%s:%s?s=", baseURL, port)
 
