@@ -1,63 +1,15 @@
-# Build and run test application
+# Exercises
 
-## 1.Dockerfile
+## Simple Single Container Application with 2 Binaries
 
-### Introduction
-
-[Dockerfile](./chapters/1.Dockerfile)
-
-## 2.Dockerfile
-
-### Layers
-
-[Dockerfile](./chapters/2.Dockerfile)
-
-## 3.Dockerfile
-
-### Multi-stage
-
-[Dockerfile](./chapters/3.Dockerfile)
-
-## 4.Dockerfile
-
-### Mounts
-
-[Dockerfile](./chapters/4.Dockerfile)
-
-## 5.Dockerfile
-
-### Build arguments
-
-[Dockerfile](./chapters/5.Dockerfile)
-
-## 6.Dockerfile
-
-### Export binaries
-
-[Dockerfile](./chapters/6.Dockerfile)
-
-## 7.Dockerfile
-
-### Test
-
-[Dockerfile](./chapters/7.Dockerfile)
-
-## 8.Dockerfile
-
-### Multi-platform
-
-[Dockerfile](./chapters/8.Dockerfile)
-
-## Bonus Exercises
-
-### Simple Single Container
+[View Simple Dockerfile](./chapters/1.Dockerfile)
 
 ```bash
 # build and run the app
 docker build -t gotest:v1 .
 docker run -d --name gotest1  gotest:v1 
 
-# run the client in the container
+# run the client in the container (crtl+c to stop)
 docker exec -it gotest1 /bin/client
 
 # see how proc 1/server is listening on port 3000 inside the container, but not exposed outside the container 
@@ -65,8 +17,9 @@ docker exec -it gotest1 /bin/sh
 > netstat -tulp
 ```
 
-### Multi-Stage build Multi Container
+## Multi-Stage build Multi Container
 
+[View Multi-Stage Dockerfile](./chapters/3.Dockerfile)
 ```bash
 ## Build and run the server
 docker build -t gotest-server:v3 --target server -f ./chapters/3.Dockerfile .
@@ -89,7 +42,7 @@ docker image ls | grep gotest
 docker rm -f $(docker container ls -aq)
 ```
 
-### Using Docker Network and DNS
+## Using Docker Network and DNS
 
 ```bash
 # Create a docker network
